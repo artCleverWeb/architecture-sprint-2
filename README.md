@@ -54,3 +54,8 @@ docker compose up -d
 ```shell
 ./scripts/mongo-init.sh
 ```
+
+# Задание 5. Service Discovery и балансировка с API Gateway
+
+Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ)
+![Задание_5](Api Gateway.png)
