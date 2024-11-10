@@ -59,4 +59,10 @@ docker compose up -d
 
 Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ)
 
-![Задание_5](Api Gateway.png)
+![Задание_5](./ApiGateway.png)
+
+# Задание 6. CDN
+
+Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ)
+
+![Задание_6](./ApiGatewayCDN.png)
