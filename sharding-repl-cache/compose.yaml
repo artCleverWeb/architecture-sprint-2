@@ -9,6 +9,7 @@ services:
     environment:
       MONGODB_URL: ${MONGODB_URL}
       MONGODB_DATABASE_NAME: ${MONGODB_DATABASE_NAME}
+      REDIS_URL: ${REDIS_URL}
     networks:
       - app-network
   redisSrv:
