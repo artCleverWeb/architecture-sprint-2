@@ -1,18 +1,22 @@
-# pymongo-api
+# Задание 2
 
 ## Как запустить
 
 Запускаем mongodb и приложение
 
 ```shell
+cd ./mongo-sharding/
 docker compose up -d
+
 ```
 
-Заполняем mongodb данными
+Запускаем процесс инициализации шардов и заполняем mongodb данными
 
 ```shell
 ./scripts/mongo-init.sh
 ```
+
+
 
 ## Как проверить
 
