@@ -1,3 +1,6 @@
+# Задание 1. Планирование 
+Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ) 
+
 # Задание 2. Шардирование
 
 ## Как запустить
@@ -41,7 +44,7 @@ docker compose up -d
 Запускаем mongodb и приложение
 
 ```shell
-cd ./mongo-sharding-repl/ 
+cd ./sharding-repl-cache/ 
 docker compose up -d
 
 ```
