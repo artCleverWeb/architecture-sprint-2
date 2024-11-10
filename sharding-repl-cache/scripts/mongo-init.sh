@@ -64,8 +64,8 @@ sleep 5
 printf 'Инициализия роута, наполнения данными\n'
 
 docker compose exec -T mongos_router mongosh --port 27024  --quiet <<EOF
-sh.addShard( "shard1/shard1_1:27018");
-sh.addShard( "shard2/shard2_1:27021");
+sh.addShard( "shard1/shard1_1:27018,shard1_2:27019,shard1_3:27020");
+sh.addShard( "shard2/shard2_1:27021,shard2_2:27022,shard2_3:27023");
 
 sh.enableSharding("somedb");
 sh.shardCollection("somedb.helloDoc", { "name" : "hashed" } )
