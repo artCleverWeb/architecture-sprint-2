@@ -1,35 +1,68 @@
-# pymongo-api
+# Задание 1. Планирование 
+Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ) 
+
+# Задание 2. Шардирование
 
 ## Как запустить
 
 Запускаем mongodb и приложение
 
 ```shell
+cd ./mongo-sharding/ 
 docker compose up -d
+
 ```
 
-Заполняем mongodb данными
+Запускаем процесс инициализации шардов и заполняем mongodb данными
 
 ```shell
 ./scripts/mongo-init.sh
 ```
 
-## Как проверить
+# Задание 3. Репликация
 
-### Если вы запускаете проект на локальной машине
+## Как запустить
 
-Откройте в браузере http://localhost:8080
-
-### Если вы запускаете проект на предоставленной виртуальной машине
-
-Узнать белый ip виртуальной машины
+Запускаем mongodb и приложение
 
 ```shell
-curl --silent http://ifconfig.me
+cd ./mongo-sharding-repl/ 
+docker compose up -d
+
 ```
 
-Откройте в браузере http://<ip виртуальной машины>:8080
+Запускаем процесс инициализации шардов и заполняем mongodb данными
 
-## Доступные эндпоинты
+```shell
+./scripts/mongo-init.sh
+```
 
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+# Задание 4. Кэширование
+
+## Как запустить
+
+Запускаем mongodb и приложение
+
+```shell
+cd ./sharding-repl-cache/ 
+docker compose up -d
+
+```
+
+Запускаем процесс инициализации шардов и заполняем mongodb данными
+
+```shell
+./scripts/mongo-init.sh
+```
+
+# Задание 5. Service Discovery и балансировка с API Gateway
+
+Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ)
+
+![Задание_5](./ApiGateway.png)
+
+# Задание 6. CDN
+
+Ссылка на диаграмму - [Диаграма](https://disk.yandex.ru/d/YMk2Uu1xHUrgpQ)
+
+![Задание_6](./ApiGatewayCDN.png)
